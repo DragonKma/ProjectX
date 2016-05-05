@@ -2,7 +2,7 @@
 PASS=1q2w3e4r
 
 apt-get -y update
-apt-get -y install expect jwm vnc4server xterm nano curl
+apt-get -y install expect jwm vnc4server xterm nano curl ;
 
 /usr/bin/expect - << EOF1
 spawn /usr/bin/vncserver on
@@ -23,7 +23,7 @@ wget http://dragonkma.github.io/PrivateTE/budgetvm/vncservers.conf -O /etc/vncse
 update-rc.d vncserver defaults 9
 vncserver
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i google-chrome-stable_current_amd64.deb; apt-get -y -f install &
+dpkg -i google-chrome-stable_current_amd64.deb; apt-get -y -f install &&
 cd /root
 wget http://dragonkma.github.io/PrivateTE/budgetvm/all.sh -O /root/all.sh
 chmod +x all.sh
