@@ -15,20 +15,20 @@ EOF1
 
 vncserver
 vncserver -kill :1
-wget http://dragonkma.github.io/PrivateTE/vnc/xstartup -O /root/.vnc/xstartup
-wget http://dragonkma.github.io/PrivateTE/vnc/vncserver -O /etc/init.d/vncserver
+wget http://dragonkma.github.io/PrivateTE/budgetvm/xstartup -O /root/.vnc/xstartup
+wget http://dragonkma.github.io/PrivateTE/budgetvm/vncserver -O /etc/init.d/vncserver
 chmod +x /etc/init.d/vncserver
 mkdir -p /etc/vncserver
-wget http://dragonkma.github.io/PrivateTE/vnc/vncservers.conf -O /etc/vncserver/vncservers.conf
+wget http://dragonkma.github.io/PrivateTE/budgetvm/vncservers.conf -O /etc/vncserver/vncservers.conf
 update-rc.d vncserver defaults 9
 vncserver
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 apt-get -y -f install
 cd /root
-wget http://dragonkma.github.io/PrivateTE/vnc/all.sh -O /root/all.sh
+wget http://dragonkma.github.io/PrivateTE/budgetvm/all.sh -O /root/all.sh
 chmod +x all.sh
-wget http://dragonkma.github.io/PrivateTE/vnc/startme.sh -O /root/startme.sh
+wget http://dragonkma.github.io/PrivateTE/budgetvm/startme.sh -O /root/startme.sh
 chmod +x startme.sh
 
 reboot
