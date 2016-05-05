@@ -35,3 +35,5 @@ chmod +x all.sh
 wget http://dragonkma.github.io/PrivateTE/budgetvm/startme.sh -O /root/startme.sh
 chmod +x startme.sh
 echo '0 6 * * * root reboot' >> /etc/crontab
+
+reboot
