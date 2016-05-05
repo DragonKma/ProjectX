@@ -23,7 +23,7 @@ wget http://dragonkma.github.io/PrivateTE/budgetvm/vncservers.conf -O /etc/vncse
 update-rc.d vncserver defaults 9
 vncserver
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i google-chrome-stable_current_amd64.deb; apt-get -y -f install
+dpkg -i google-chrome-stable_current_amd64.deb; apt-get -y -f install; 
 cd /root
 wget http://dragonkma.github.io/PrivateTE/budgetvm/all.sh -O /root/all.sh
 chmod +x all.sh
